@@ -1,4 +1,6 @@
-import Navbar from "./Navbar";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -10,26 +12,18 @@ const About = () => {
           backgroundImage: `url(imgp4.png)`,
         }}
       >
-        <div className="grid grid-cols-12 w-full gap-6 px-4 md:px-20 ">
-          <div className=" col-span-2 flex items-center justify-start">
-            <img src="logo.png" alt="Logo" className="h-20" />
-          </div>
-
-          <nav className=" flex items-center  col-start-3 col-end-12 text-white">
-            <Navbar />
-          </nav>
-        </div>
+        <Header />
       </div>
       <div className="flex  justify-center items-center">
-        <span className="text-orangy text-center mt-20 text-3xl font-bold uppercase">
+        <span className="text-orangy text-center max-md:text-sm mt-20 text-3xl font-bold uppercase">
           About us
         </span>
       </div>
-      <div className=" grid grid-cols-12 w-full gap-6 px-4 md:px-20   ">
-        <div className=" flex flex-col col-start-2 col-span-10 p-7 rounded-lg space-y-5">
-          <div className=" flex space-x-5  p-6 rounded-lg relative">
+      <div className=" grid grid-cols-12 w-full gap-6 px-0 md:px-20   ">
+        <div className=" flex flex-col col-start-2 col-span-10 max-sm:col-span-12 text-base max-sm:p-2 max-sm:text-xs p-7 rounded-lg space-y-5">
+          <div className=" flex space-x-5 max-md:p-2 p-6 rounded-lg relative">
             <div className="flex  justify-center items-center">
-              <p className="text-white  font-light text-base leading-loose 6">
+              <p className="text-white  font-light  leading-loose 6">
                 Welcome to PrimeCoal, a leader in the coal mining and energy
                 industry. With decades of experience and a deep commitment to
                 sustainable practices, we are dedicated to providing
@@ -41,15 +35,15 @@ const About = () => {
         </div>
       </div>
       <div className="flex  justify-center items-center">
-        <span className="text-orangy text-center  text-3xl font-bold uppercase">
+        <span className="text-orangy text-center max-md:text-sm text-3xl font-bold uppercase">
           Our Mission
         </span>
       </div>
-      <div className=" grid grid-cols-12 w-full gap-6 px-4 md:px-20   ">
-        <div className=" flex flex-col col-start-2 col-span-10 p-7 rounded-lg space-y-5">
-          <div className=" flex space-x-5  p-6 rounded-lg relative">
+      <div className=" grid grid-cols-12 w-full gap-6 px-0 md:px-20   ">
+        <div className=" flex flex-col col-start-2 col-span-10 max-sm:col-span-12 text-base max-sm:p-2 max-sm:text-xs p-7 rounded-lg space-y-5">
+          <div className=" flex space-x-5 max-md:p-2 p-6 rounded-lg relative">
             <div className="flex  justify-center items-center">
-              <p className="text-white  font-light text-base leading-loose 6">
+              <p className="text-white  font-light  leading-loose 6">
                 At PrimeCoal, our mission is to deliver reliable energy
                 solutions through responsible coal mining operations. We
                 understand the importance of balancing energy needs with
@@ -62,15 +56,15 @@ const About = () => {
         </div>
       </div>
       <div className="flex  justify-center items-center">
-        <span className="text-orangy text-center  text-3xl font-bold uppercase">
+        <span className="text-orangy text-center max-md:text-sm text-3xl font-bold uppercase">
           Our Values
         </span>
       </div>
-      <div className=" grid grid-cols-12 w-full gap-6 px-4 md:px-20   ">
-        <div className=" flex flex-col col-start-2 col-span-10 p-7 rounded-lg space-y-5">
-          <div className=" flex space-x-5  p-6 rounded-lg relative">
+      <div className=" grid grid-cols-12 w-full gap-6 px-0 md:px-20   ">
+        <div className=" flex flex-col col-start-2 col-span-10 max-sm:col-span-12 text-base max-sm:p-2 max-sm:text-xs p-7 rounded-lg space-y-5">
+          <div className=" flex space-x-5 max-md:p-2 p-6 rounded-lg relative">
             <div className="flex  justify-center items-center">
-              <p className="text-white  font-light text-base leading-loose 6">
+              <p className="text-white  font-light leading-loose 6">
                 <ul className="list-disc pl-5 space-y-2">
                   <li className="text-white">
                     <span className="font-semibold">Safety First:</span> The
@@ -110,32 +104,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <footer className="flex w-full gap-6 px-4 md:px-20 mt-32 justify-between pb-10">
-        <div className="flex flex-col justify-center ">
-          <div className="">
-            <img src="logo.png" alt="Logo" className="h-20" />
-          </div>
-          <div className="flex justify-center">
-            <p className="text-slate-300 text-xs">©2024</p>
-          </div>
-        </div>
-        <div className="flex flex-col text-white space-y-[20px] ">
-          <span className="text-orangy">Contacts</span>
-          <span>+7 (901) 772-0000</span>
-          <span>primecoal@info.com</span>
-        </div>
-        <div className="flex items-center space-x-3 justify-between">
-          <Link to="https://www.facebook.com/?locale=fr_FR">
-            <img src="Fb.png" alt="" />
-          </Link>
-          <Link to="https://www.instagram.com/#:~:text=Create%20an%20account%20or%20log%20in%20to%20Instagram">
-            <img src="Insta.png" alt="" />
-          </Link>
-          <Link to="https://web.whatsapp.com/#:~:text=Quickly%20send%20and%20receive%20WhatsApp">
-            <img src="tel.png" alt="" />
-          </Link>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

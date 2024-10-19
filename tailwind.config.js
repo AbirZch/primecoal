@@ -11,6 +11,7 @@ export default {
     extend: {
       backgroundColor :{lightgray:"#1F1F1F",orangy:"#EA5D42"},
       colors :{orangy:"#EA5D42"},
+      backgroundImage:{mainCard:"url('/main-card.png')",backgroundImg:"url('/background.png')"}
      
 }
     },

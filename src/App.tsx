@@ -10,9 +10,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route Component={Home} path="/" /> {/* 👈 Renders at /app/ */}
-        <Route Component={BecomeDistrubutorPage} path="/becomedis"/>
+        <Route Component={BecomeDistrubutorPage} path="/become-distributor"/>
         <Route Component={News} path="/news"></Route>
-        <Route Component={About} path="/About"></Route>
+        <Route Component={About} path="/about-us"></Route>
       </Routes>
     </BrowserRouter>
   );
