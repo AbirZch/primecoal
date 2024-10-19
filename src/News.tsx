@@ -1,6 +1,5 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import { Link } from "react-router-dom";
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 const News = () => {
